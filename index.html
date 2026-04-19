@@ -3,59 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AymaraRoot | Servicios Integrales</title>
+    <title>AymaraRoot | Gestión Estratégica & Idiomas</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
-        header { background: #002d4b; color: white; padding: 2rem; text-align: center; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
-        .card h2 { color: #002d4b; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
-        .btn { background: #d4af37; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
-        footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #777; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; background-color: #f4f7f9; line-height: 1.6; }
+        header { background: #002d4b; color: white; padding: 3rem 1rem; text-align: center; }
+        .logo { max-width: 220px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        .intro-text { text-align: center; margin-bottom: 40px; color: #555; font-style: italic; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .card { background: white; border: none; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h2 { color: #002d4b; border-bottom: 3px solid #d4af37; padding-bottom: 12px; margin-top: 0; }
+        .resource-list { list-style: none; padding: 0; }
+        .resource-item { margin: 15px 0; padding: 10px; background: #fdfdfd; border-left: 4px solid #d4af37; border-radius: 4px; }
+        .resource-link { color: #002d4b; text-decoration: none; font-weight: 600; display: block; }
+        .resource-link:hover { color: #d4af37; }
+        .tag { font-size: 0.75rem; background: #eee; padding: 2px 8px; border-radius: 10px; color: #777; margin-top: 5px; display: inline-block; }
+        .btn-ws { background: #25d366; color: white; padding: 18px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 30px; font-weight: bold; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
+        footer { text-align: center; padding: 50px; font-size: 0.9rem; color: #888; border-top: 1px solid #eee; margin-top: 40px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>AymaraRoot</h1>
-        <p>Gestión Estratégica & Servicios Lingüísticos</p>
-    </header>
 
-    <div class="container">
-        <div class="grid">
-            <div class="card">
-                <h2>Gestión Estratégica</h2>
-                <p>Asesoría en finanzas personales y contabilidad estratégica para profesionales.</p>
-                <ul>
-                    <li>Contabilidad General</li>
-                    <li>Planificación Financiera</li>
-                </ul>
-                <a href="#contacto" class="btn">Consultar</a>
-            </div>
+<header>
+    <img src="logo.jpg" alt="AymaraRoot Logo" class="logo">
+    <p>Kamisaki! Bienvenido a tu espacio de crecimiento lingüístico y estratégico.</p>
+</header>
 
-            <div class="card">
-                <h2>Servicios Lingüísticos</h2>
-                <p>Traducción profesional y enseñanza del idioma Aymara.</p>
-                <ul>
-                    <li>Traducción EN / ES / AYM</li>
-                    <li>Clases de Aymara</li>
-                </ul>
-                <a href="#contacto" class="btn">Agendar Clase</a>
+<div class="container">
+    <p class="intro-text">"Fortaleciendo nuestras raíces para proyectar un futuro sólido."</p>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Yatiqawi (Aprendizaje)</h2>
+            <p>El Aymara no es solo una lengua, es una forma de ver el mundo. Aquí encontrarás herramientas para conectar con nuestra cultura y comunicarte con precisión.</p>
+            
+            <div class="resource-list">
+                <div class="resource-item">
+                    <a href="#" class="resource-link">📔 Lección 1: Fonética y Alfabeto</a>
+                    <span class="tag">Próximamente</span>
+                </div>
+                <div class="resource-item">
+                    <a href="#" class="resource-link">📔 Saludos y Presentación Personal</a>
+                    <span class="tag">Material de estudio</span>
+                </div>
+                <div class="resource-item">
+                    <a href="#" class="resource-link">🎧 Audio: Pronunciación básica</a>
+                    <span class="tag">Multimedia</span>
+                </div>
             </div>
         </div>
 
-        <section id="contacto" style="margin-top: 40px; text-align: center;">
-            <h3>¿Hablamos?</h3>
-            <form name="contacto-aymararoot" method="POST" data-netlify="true">
-                <input type="text" name="nombre" placeholder="Tu nombre" required style="padding: 10px; width: 250px;"><br><br>
-                <textarea name="mensaje" placeholder="¿En qué puedo ayudarte?" style="padding: 10px; width: 250px; height: 100px;"></textarea><br><br>
-                <button type="submit" class="btn" style="border: none; cursor: pointer;">Enviar Mensaje</button>
-            </form>
-        </section>
+        <div class="card">
+            <h2>Gestión Estratégica</h2>
+            <p>La libertad financiera comienza con el orden. Comparte y descarga estos materiales diseñados para optimizar tu economía personal y profesional.</p>
+            
+            <div class="resource-list">
+                <div class="resource-item">
+                    <a href="https://drive.google.com/file/d/1Ce8Mt8G4qT6ArcWlDVnu5mkJtDhD-fSH/view?usp=sharing" target="_blank" class="resource-link">
+                        📊 Diapositivas: Ordenando Ingresos y Gastos
+                    </a>
+                    <span class="tag">Material para Amigas & Clientes</span>
+                </div>
+                <div class="resource-item">
+                    <a href="#" class="resource-link">📰 Noticias: Tendencias Financieras 2026</a>
+                    <span class="tag">Actualidad</span>
+                </div>
+                <div class="resource-item">
+                    <a href="#" class="resource-link">📈 Plantilla básica de Contabilidad</a>
+                    <span class="tag">Excel / GnuCash</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        &copy; 2026 AymaraRoot - El Alto, Bolivia.
-    </footer>
+    <section id="contacto" style="margin-top: 50px; text-align: center;">
+        <h3>¿Iniciamos un proyecto juntos?</h3>
+        <p>Hablemos sobre traducciones, clases o asesoría contable.</p>
+        <a href="https://wa.me/59172530326?text=Hola%20Lizeth,%20vengo%20de%20tu%20web%20AymaraRoot.%20Me%20interesa%20saber%20más%20sobre..." 
+           class="btn-ws" target="_blank">
+            💬 Enviar mensaje al WhatsApp
+        </a>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 AymaraRoot | El Alto, Bolivia <br>
+    Gestión Estratégica por Lizeth Reyna Mamani Ticona
+</footer>
+
 </body>
 </html>
