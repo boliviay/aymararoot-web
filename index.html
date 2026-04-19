@@ -7,89 +7,98 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; background-color: #f4f7f9; line-height: 1.6; }
         header { background: #002d4b; color: white; padding: 3rem 1rem; text-align: center; }
-        .logo { max-width: 220px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        
+        .logo { 
+            max-width: 250px; 
+            height: auto; 
+            margin-bottom: 15px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+            background: white; 
+            padding: 10px; 
+        }
+        
         .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .intro-text { text-align: center; margin-bottom: 40px; color: #555; font-style: italic; }
+        .intro-text { text-align: center; margin-bottom: 40px; color: #555; font-style: italic; font-size: 1.1rem; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
         .card { background: white; border: none; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
         .card:hover { transform: translateY(-5px); }
         .card h2 { color: #002d4b; border-bottom: 3px solid #d4af37; padding-bottom: 12px; margin-top: 0; }
+        
         .resource-list { list-style: none; padding: 0; }
         .resource-item { margin: 15px 0; padding: 10px; background: #fdfdfd; border-left: 4px solid #d4af37; border-radius: 4px; }
         .resource-link { color: #002d4b; text-decoration: none; font-weight: 600; display: block; }
-        .resource-link:hover { color: #d4af37; }
         .tag { font-size: 0.75rem; background: #eee; padding: 2px 8px; border-radius: 10px; color: #777; margin-top: 5px; display: inline-block; }
-        .btn-ws { background: #25d366; color: white; padding: 18px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 30px; font-weight: bold; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); }
+        
+        .buttons-container { margin-top: 50px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; }
+        .btn-ws { background: #25d366; color: white; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); min-width: 280px; }
+        .btn-paypal { background: #0070ba; color: white; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(0, 112, 186, 0.3); min-width: 280px; }
+        
         footer { text-align: center; padding: 50px; font-size: 0.9rem; color: #888; border-top: 1px solid #eee; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.jpg" alt="AymaraRoot Logo" class="logo">
-    <p>Kamisaki! Bienvenido a tu espacio de crecimiento lingüístico y estratégico.</p>
+    <img src="logo.png" alt="AymaraRoot Logo" class="logo">
+    <h1>AymaraRoot</h1>
+    <p>Kamisaki! Fortaleciendo raíces, proyectando futuros.</p>
 </header>
 
 <div class="container">
-    <p class="intro-text">"Fortaleciendo nuestras raíces para proyectar un futuro sólido."</p>
+    <p class="intro-text">"El Aymara no es solo una lengua, es una forma de ver el mundo. Fortaleciendo nuestras raíces para proyectar un futuro sólido."</p>
 
     <div class="grid">
         <div class="card">
             <h2>Yatiqawi (Aprendizaje)</h2>
-            <p>El Aymara no es solo una lengua, es una forma de ver el mundo. Aquí encontrarás herramientas para conectar con nuestra cultura y comunicarte con precisión.</p>
-            
+            <p>Conecta con la cosmovisión Aymara a través del lenguaje y la cultura.</p>
             <div class="resource-list">
                 <div class="resource-item">
-                    <a href="#" class="resource-link">📔 Lección 1: Fonética y Alfabeto</a>
+                    <a href="#" class="resource-link">📔 Lección 1: El Alfabeto Fonético</a>
                     <span class="tag">Próximamente</span>
                 </div>
                 <div class="resource-item">
-                    <a href="#" class="resource-link">📔 Saludos y Presentación Personal</a>
+                    <a href="#" class="resource-link">📔 Saludos y Cortesía</a>
                     <span class="tag">Material de estudio</span>
-                </div>
-                <div class="resource-item">
-                    <a href="#" class="resource-link">🎧 Audio: Pronunciación básica</a>
-                    <span class="tag">Multimedia</span>
                 </div>
             </div>
         </div>
 
         <div class="card">
             <h2>Gestión Estratégica</h2>
-            <p>La libertad financiera comienza con el orden. Comparte y descarga estos materiales diseñados para optimizar tu economía personal y profesional.</p>
-            
+            <p>Recursos y asesoría para optimizar tu contabilidad y finanzas personales.</p>
             <div class="resource-list">
                 <div class="resource-item">
                     <a href="https://drive.google.com/file/d/1Ce8Mt8G4qT6ArcWlDVnu5mkJtDhD-fSH/view?usp=sharing" target="_blank" class="resource-link">
-                        📊 Diapositivas: Ordenando Ingresos y Gastos
+                        📊 Diapositivas: Ordenar Ingresos y Gastos
                     </a>
-                    <span class="tag">Material para Amigas & Clientes</span>
+                    <span class="tag">Material compartido</span>
                 </div>
                 <div class="resource-item">
-                    <a href="#" class="resource-link">📰 Noticias: Tendencias Financieras 2026</a>
-                    <span class="tag">Actualidad</span>
-                </div>
-                <div class="resource-item">
-                    <a href="#" class="resource-link">📈 Plantilla básica de Contabilidad</a>
-                    <span class="tag">Excel / GnuCash</span>
+                    <a href="#" class="resource-link">📉 Guía básica: Introducción a GnuCash</a>
+                    <span class="tag">Contabilidad</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="contacto" style="margin-top: 50px; text-align: center;">
-        <h3>¿Iniciamos un proyecto juntos?</h3>
-        <p>Hablemos sobre traducciones, clases o asesoría contable.</p>
-        <a href="https://wa.me/59172530326?text=Hola%20Lizeth,%20vengo%20de%20tu%20web%20AymaraRoot.%20Me%20interesa%20saber%20más%20sobre..." 
+    <section class="buttons-container">
+        <h3>¿Hablamos sobre tu próximo proyecto?</h3>
+        
+        <a href="https://wa.me/59172530326?text=Hola%20Lizeth,%20vengo%20de%20tu%20web%20AymaraRoot.%20Me%20interesa%20más%20información." 
            class="btn-ws" target="_blank">
-            💬 Enviar mensaje al WhatsApp
+            💬 Contactar por WhatsApp
+        </a>
+
+        <a href="https://www.paypal.me/LizethRe" class="btn-paypal" target="_blank">
+            💳 Realizar Pago por PayPal
         </a>
     </section>
 </div>
 
 <footer>
     &copy; 2026 AymaraRoot | El Alto, Bolivia <br>
-    Gestión Estratégica por Lizeth Reyna Mamani Ticona
+    Gestión Estratégica por Lizeth Reyna 
 </footer>
 
 </body>
