@@ -3,100 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AymaraRoot | Gestión Estratégica & Traducción</title>
+    <title>GENIA | Expertos en Aymara & Gestión Estratégica</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: #2c3e50; background-color: #ffffff; line-height: 1.6; }
-        
-        /* Cabecera centrada solo con el logo */
-        header { padding: 4rem 1rem 2rem 1rem; text-align: center; background: #ffffff; }
-        .logo { max-width: 280px; height: auto; transition: opacity 0.3s; }
-        
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        
-        /* Grid con Finanzas a la izquierda y Traducción a la derecha */
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
-        
-        .card { background: #fdfdfd; border-top: 4px solid #002d4b; padding: 30px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .card h2 { color: #002d4b; font-size: 1.5rem; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        
-        .resource-list { list-style: none; padding: 0; margin-top: 20px; }
-        .resource-item { margin-bottom: 12px; }
-        .resource-link { color: #0056b3; text-decoration: none; font-weight: 500; font-size: 0.95rem; }
-        .resource-link:hover { text-decoration: underline; }
-        
-        .tag { font-size: 0.7rem; color: #999; text-transform: uppercase; margin-left: 5px; }
-
-        /* Botones de acción */
-        .action-area { text-align: center; padding: 60px 0; background: #fcfcfc; margin-top: 50px; }
-        .btn-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
-        
-        .btn { padding: 15px 35px; text-decoration: none; border-radius: 2px; font-weight: bold; font-size: 0.9rem; letter-spacing: 1px; transition: all 0.3s; }
-        .btn-ws { background: #25d366; color: white; border: 1px solid #25d366; }
-        .btn-paypal { background: #0070ba; color: white; border: 1px solid #0070ba; }
-        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
-        
-        footer { text-align: center; padding: 60px; font-size: 0.8rem; color: #bbb; letter-spacing: 1px; }
-
-        /* Ajuste para celulares */
-        @media (max-width: 768px) {
-            .grid { grid-template-columns: 1fr; }
-            .logo { max-width: 200px; }
+        :root {
+            --primary: #002d4b;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
         }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: #333; background-color: white; line-height: 1.6; }
+        
+        /* Sección Hero: Inspirada en tu web de Site123 */
+        header { 
+            background: linear-gradient(rgba(0, 45, 75, 0.8), rgba(0, 45, 75, 0.8)), url('https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1500'); 
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            padding: 5rem 1rem; 
+            text-align: center; 
+        }
+
+        /* Logo mucho más grande y destacado */
+        .logo { 
+            max-width: 400px; 
+            height: auto; 
+            margin-bottom: 20px; 
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 20px; 
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        header h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+
+        .container { max-width: 1100px; margin: auto; padding: 50px 20px; }
+        
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+        .section-title .bar { width: 80px; height: 4px; background: var(--secondary); margin: auto; }
+
+        /* Cuadrícula de Servicios tipo SITE123 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { 
+            background: var(--light); 
+            padding: 40px 30px; 
+            border-radius: 5px; 
+            text-align: center;
+            transition: 0.3s;
+            border-bottom: 5px solid transparent;
+        }
+        .card:hover { transform: translateY(-10px); border-color: var(--secondary); background: white; box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+        .card h3 { color: var(--primary); font-size: 1.5rem; margin-bottom: 15px; text-transform: uppercase; }
+        .card p { color: #666; margin-bottom: 20px; }
+
+        /* Botones estilo Profesional */
+        .btn { 
+            display: inline-block; 
+            padding: 15px 40px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-ws { background: #25d366; color: white; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); }
+        .btn-ws:hover { background: #1ebe57; transform: scale(1.05); }
+        .btn-paypal { background: #0070ba; color: white; margin-top: 10px; font-size: 0.8rem; padding: 10px 25px; }
+
+        .resource-link { color: var(--primary); font-weight: bold; text-decoration: none; display: block; margin-top: 10px; }
+
+        footer { background: #111; color: #888; text-align: center; padding: 40px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="AymaraRoot" class="logo">
+    <img src="logo.png" alt="GENIA Logo" class="logo">
+    <h1>GENIA</h1>
+    <p>Expertos en Aymara & Gestión Estratégica</p>
 </header>
 
 <div class="container">
+    <div class="section-title">
+        <h2>Servicios Profesionales</h2>
+        <div class="bar"></div>
+        <p style="margin-top: 20px; color: #666;">Tu guía lingüística y estratégica de confianza en Bolivia.</p>
+    </div>
+
     <div class="grid">
         <div class="card">
-            <h2>Gestión Estratégica</h2>
-            <p>Consultoría técnica en contabilidad y optimización de recursos financieros.</p>
-            <div class="resource-list">
-                <div class="resource-item">
-                    <a href="https://drive.google.com/file/d/1Ce8Mt8G4qT6ArcWlDVnu5mkJtDhD-fSH/view?usp=sharing" target="_blank" class="resource-link">
-                        [PDF] Análisis de Ingresos y Gastos Personales
-                    </a>
-                    <span class="tag">Material Corporativo</span>
-                </div>
-                <div class="resource-item">
-                    <a href="#" class="resource-link">Implementación de Sistemas Contables (GnuCash)</a>
-                    <span class="tag">Servicio</span>
-                </div>
-            </div>
+            <h3>Traducciones</h3>
+            <p>Documentos de nivel básico, intermedio y avanzado. Precisión cultural y lingüística.</p>
+            <span style="color: var(--secondary); font-weight: bold;">Certificado Profesional</span>
         </div>
 
         <div class="card">
-            <h2>Traducción Especializada</h2>
-            <p>Servicios lingüísticos de alta precisión: Inglés - Aymara - Español para sectores legales y técnicos.</p>
-            <div class="resource-list">
-                <div class="resource-item">
-                    <a href="#" class="resource-link">Traducción de Documentación Administrativa</a>
-                    <span class="tag">Certificada</span>
-                </div>
-                <div class="resource-item">
-                    <a href="#" class="resource-link">Repositorio Digital de Material Lingüístico</a>
-                    <span class="tag">Investigación</span>
-                </div>
-            </div>
+            <h3>Clases & Tareas</h3>
+            <p>Apoyo integral en tareas de Aymara para todos los niveles. Teatro, cómic, poesía y preparación para exámenes.</p>
+            <a href="#" class="resource-link">📔 Ver temas de aprendizaje</a>
         </div>
+
+        <div class="card">
+            <h3>Gestión Estratégica</h3>
+            <p>Asesoría en finanzas personales y contabilidad. Material exclusivo para clientes y amigas.</p>
+            <a href="https://drive.google.com/file/d/1Ce8Mt8G4qT6ArcWlDVnu5mkJtDhD-fSH/view?usp=sharing" target="_blank" class="resource-link">
+                📊 Descargar: Ordenando Ingresos y Gastos
+            </a>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 80px;">
+        <h3>¿Necesitas apoyo por Google Meet o WhatsApp?</h3>
+        <p>Atención personalizada para tus proyectos lingüísticos o financieros.</p>
+        
+        <a href="https://wa.me/59172530326?text=Hola%20Lizeth,%20vengo%20de%20tu%20web%20AymaraRoot.%20Quisiera%20ayuda%20con..." 
+           class="btn btn-ws" target="_blank">
+            💬 WhatsApp: 72530326
+        </a>
+        <br>
+        <a href="https://www.paypal.me/LizethRe" class="btn btn-paypal" target="_blank">
+            Pagar por PayPal (@LizethRe)
+        </a>
     </div>
 </div>
 
-<section class="action-area">
-    <h3>Contacto Profesional</h3>
-    <div class="btn-group">
-        <a href="https://wa.me/59172530326" class="btn btn-ws" target="_blank">WHATSAPP DIRECTO</a>
-        <a href="https://www.paypal.me/LizethRe" class="btn btn-paypal" target="_blank">PAGOS PAYPAL</a>
-    </div>
-</section>
-
 <footer>
-    LIZETH REYNA| LA PAZ, BOLIVIA <br>
-    © 2026 AYMARAROOT - TODOS LOS DERECHOS RESERVADOS
+    &copy; 2026 GENIA - AymaraRoot | El Alto, Bolivia <br>
+    Desarrollado por Lizeth Reyna Mamani Ticona
 </footer>
 
 </body>
