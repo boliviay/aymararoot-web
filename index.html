@@ -3,102 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AymaraRoot | Gestión Estratégica & Idiomas</title>
+    <title>AymaraRoot | Gestión Estratégica & Traducción</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; background-color: #f4f7f9; line-height: 1.6; }
-        header { background: #002d4b; color: white; padding: 3rem 1rem; text-align: center; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; color: #2c3e50; background-color: #ffffff; line-height: 1.6; }
         
-        .logo { 
-            max-width: 250px; 
-            height: auto; 
-            margin-bottom: 15px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
-            background: white; 
-            padding: 10px; 
-        }
+        /* Cabecera centrada solo con el logo */
+        header { padding: 4rem 1rem 2rem 1rem; text-align: center; background: #ffffff; }
+        .logo { max-width: 280px; height: auto; transition: opacity 0.3s; }
         
         .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .intro-text { text-align: center; margin-bottom: 40px; color: #555; font-style: italic; font-size: 1.1rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .card { background: white; border: none; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card h2 { color: #002d4b; border-bottom: 3px solid #d4af37; padding-bottom: 12px; margin-top: 0; }
         
-        .resource-list { list-style: none; padding: 0; }
-        .resource-item { margin: 15px 0; padding: 10px; background: #fdfdfd; border-left: 4px solid #d4af37; border-radius: 4px; }
-        .resource-link { color: #002d4b; text-decoration: none; font-weight: 600; display: block; }
-        .tag { font-size: 0.75rem; background: #eee; padding: 2px 8px; border-radius: 10px; color: #777; margin-top: 5px; display: inline-block; }
+        /* Grid con Finanzas a la izquierda y Traducción a la derecha */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
         
-        .buttons-container { margin-top: 50px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; }
-        .btn-ws { background: #25d366; color: white; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3); min-width: 280px; }
-        .btn-paypal { background: #0070ba; color: white; padding: 18px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(0, 112, 186, 0.3); min-width: 280px; }
+        .card { background: #fdfdfd; border-top: 4px solid #002d4b; padding: 30px; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card h2 { color: #002d4b; font-size: 1.5rem; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
         
-        footer { text-align: center; padding: 50px; font-size: 0.9rem; color: #888; border-top: 1px solid #eee; margin-top: 40px; }
+        .resource-list { list-style: none; padding: 0; margin-top: 20px; }
+        .resource-item { margin-bottom: 12px; }
+        .resource-link { color: #0056b3; text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .resource-link:hover { text-decoration: underline; }
+        
+        .tag { font-size: 0.7rem; color: #999; text-transform: uppercase; margin-left: 5px; }
+
+        /* Botones de acción */
+        .action-area { text-align: center; padding: 60px 0; background: #fcfcfc; margin-top: 50px; }
+        .btn-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+        
+        .btn { padding: 15px 35px; text-decoration: none; border-radius: 2px; font-weight: bold; font-size: 0.9rem; letter-spacing: 1px; transition: all 0.3s; }
+        .btn-ws { background: #25d366; color: white; border: 1px solid #25d366; }
+        .btn-paypal { background: #0070ba; color: white; border: 1px solid #0070ba; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+        
+        footer { text-align: center; padding: 60px; font-size: 0.8rem; color: #bbb; letter-spacing: 1px; }
+
+        /* Ajuste para celulares */
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .logo { max-width: 200px; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="AymaraRoot Logo" class="logo">
-    <h1>AymaraRoot</h1>
-    <p>Kamisaki! Fortaleciendo raíces, proyectando futuros.</p>
+    <img src="logo.png" alt="AymaraRoot" class="logo">
 </header>
 
 <div class="container">
-    <p class="intro-text">"El Aymara no es solo una lengua, es una forma de ver el mundo. Fortaleciendo nuestras raíces para proyectar un futuro sólido."</p>
-
     <div class="grid">
         <div class="card">
-            <h2>Yatiqawi (Aprendizaje)</h2>
-            <p>Conecta con la cosmovisión Aymara a través del lenguaje y la cultura.</p>
+            <h2>Gestión Estratégica</h2>
+            <p>Consultoría técnica en contabilidad y optimización de recursos financieros.</p>
             <div class="resource-list">
                 <div class="resource-item">
-                    <a href="#" class="resource-link">📔 Lección 1: El Alfabeto Fonético</a>
-                    <span class="tag">Próximamente</span>
+                    <a href="https://drive.google.com/file/d/1Ce8Mt8G4qT6ArcWlDVnu5mkJtDhD-fSH/view?usp=sharing" target="_blank" class="resource-link">
+                        [PDF] Análisis de Ingresos y Gastos Personales
+                    </a>
+                    <span class="tag">Material Corporativo</span>
                 </div>
                 <div class="resource-item">
-                    <a href="#" class="resource-link">📔 Saludos y Cortesía</a>
-                    <span class="tag">Material de estudio</span>
+                    <a href="#" class="resource-link">Implementación de Sistemas Contables (GnuCash)</a>
+                    <span class="tag">Servicio</span>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <h2>Gestión Estratégica</h2>
-            <p>Recursos y asesoría para optimizar tu contabilidad y finanzas personales.</p>
+            <h2>Traducción Especializada</h2>
+            <p>Servicios lingüísticos de alta precisión: Inglés - Aymara - Español para sectores legales y técnicos.</p>
             <div class="resource-list">
                 <div class="resource-item">
-                    <a href="https://drive.google.com/file/d/1Ce8Mt8G4qT6ArcWlDVnu5mkJtDhD-fSH/view?usp=sharing" target="_blank" class="resource-link">
-                        📊 Diapositivas: Ordenar Ingresos y Gastos
-                    </a>
-                    <span class="tag">Material compartido</span>
+                    <a href="#" class="resource-link">Traducción de Documentación Administrativa</a>
+                    <span class="tag">Certificada</span>
                 </div>
                 <div class="resource-item">
-                    <a href="#" class="resource-link">📉 Guía básica: Introducción a GnuCash</a>
-                    <span class="tag">Contabilidad</span>
+                    <a href="#" class="resource-link">Repositorio Digital de Material Lingüístico</a>
+                    <span class="tag">Investigación</span>
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="buttons-container">
-        <h3>¿Hablamos sobre tu próximo proyecto?</h3>
-        
-        <a href="https://wa.me/59172530326?text=Hola%20Lizeth,%20vengo%20de%20tu%20web%20AymaraRoot.%20Me%20interesa%20más%20información." 
-           class="btn-ws" target="_blank">
-            💬 Contactar por WhatsApp
-        </a>
-
-        <a href="https://www.paypal.me/LizethRe" class="btn-paypal" target="_blank">
-            💳 Realizar Pago por PayPal
-        </a>
-    </section>
 </div>
 
+<section class="action-area">
+    <h3>Contacto Profesional</h3>
+    <div class="btn-group">
+        <a href="https://wa.me/59172530326" class="btn btn-ws" target="_blank">WHATSAPP DIRECTO</a>
+        <a href="https://www.paypal.me/LizethRe" class="btn btn-paypal" target="_blank">PAGOS PAYPAL</a>
+    </div>
+</section>
+
 <footer>
-    &copy; 2026 AymaraRoot | El Alto, Bolivia <br>
-    Gestión Estratégica por Lizeth Reyna 
+    LIZETH REYNA| LA PAZ, BOLIVIA <br>
+    © 2026 AYMARAROOT - TODOS LOS DERECHOS RESERVADOS
 </footer>
 
 </body>
