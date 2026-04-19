@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AymaraRoot | Servicios Integrales</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
+        header { background: #002d4b; color: white; padding: 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        .card h2 { color: #002d4b; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+        .btn { background: #d4af37; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+        footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #777; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AymaraRoot</h1>
+        <p>Gestión Estratégica & Servicios Lingüísticos</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>Gestión Estratégica</h2>
+                <p>Asesoría en finanzas personales y contabilidad estratégica para profesionales.</p>
+                <ul>
+                    <li>Contabilidad General</li>
+                    <li>Planificación Financiera</li>
+                </ul>
+                <a href="#contacto" class="btn">Consultar</a>
+            </div>
+
+            <div class="card">
+                <h2>Servicios Lingüísticos</h2>
+                <p>Traducción profesional y enseñanza del idioma Aymara.</p>
+                <ul>
+                    <li>Traducción EN / ES / AYM</li>
+                    <li>Clases de Aymara</li>
+                </ul>
+                <a href="#contacto" class="btn">Agendar Clase</a>
+            </div>
+        </div>
+
+        <section id="contacto" style="margin-top: 40px; text-align: center;">
+            <h3>¿Hablamos?</h3>
+            <form name="contacto-aymararoot" method="POST" data-netlify="true">
+                <input type="text" name="nombre" placeholder="Tu nombre" required style="padding: 10px; width: 250px;"><br><br>
+                <textarea name="mensaje" placeholder="¿En qué puedo ayudarte?" style="padding: 10px; width: 250px; height: 100px;"></textarea><br><br>
+                <button type="submit" class="btn" style="border: none; cursor: pointer;">Enviar Mensaje</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 AymaraRoot - El Alto, Bolivia.
+    </footer>
+</body>
+</html>
